@@ -1,3 +1,5 @@
+require("dotenv").config();
+require("@nomiclabs/hardhat-waffle");
 const {API_KEY,PRIVATE_KEY,POLY_SCAN} = process.env;
 module.exports = {
   solidity: {
@@ -17,6 +19,9 @@ module.exports = {
   },
   etherscan: {
     apiKey: `${POLY_SCAN}`
+  },
+  paths:{
+    artifacts:"./frontend/src"
   }
 
 };

@@ -6,8 +6,8 @@ const query =
     "type":"https://iden3-communication.io/proofs/1.0/contract-invoke-request",
     "body":{
         "transaction_data":{
-            "contract_address":"0x53baE2308366cd5799B2A95539Ec9E2F5d6f1e0c",  //replace it with your contract address
-            "method_id":"",
+            "contract_address":"0x435936CAC77DcF6C494CDCCAF0E5beBE76d998bb",  //replace it with your contract address
+            "method_id":"b68967e2",
             "chain_id":80001,
             "network":"polygon-mumbai"
             },
