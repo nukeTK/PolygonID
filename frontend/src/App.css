@@ -1,3 +1,5 @@
-div{
-    margin:100px;
+.icon{
+    object-fit: fill;
+    width: 300px;
+    height: 300px;
 }
