@@ -9,8 +9,8 @@ const main = async () => {
   const query = {
     schema: ethers.BigNumber.from(schemaEnd),
     slotIndex: 2,
-    operator: 2,
-    value: [20020101, ...new Array(63).fill(0).map((i) => 0)],
+    operator: 1,
+    value: [1, ...new Array(63).fill(0).map((i) => 0)],
     circuitId,
   };
 
