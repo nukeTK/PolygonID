@@ -18,11 +18,11 @@
 
 <h6>After Importing all the contracts you need to create ERC20 contract with minting logic in order to mint the tokens for the user after they gret verified</h6>
 
-### You need two functions to implement the ZKPVerifier must include in your contract!!!!
+### You need two functions to implement the PolygonID!!!!
 
 </div>
 
-
+```
  function _beforeProofSubmit(
         uint64, /* requestId */
         uint256[] memory inputs,
@@ -37,8 +37,8 @@
             "address in proof is not a sender address"
         );
     }
-
-
+```
+```
     function _afterProofSubmit(
         uint64 requestId,
         uint256[] memory inputs,
@@ -55,4 +55,4 @@
         }
     }
 
-
+```
