@@ -21,6 +21,7 @@
 ### You need two functions to implement the ZKPVerifier must include in your contract!!!!
 
 <ul>
+
  function _beforeProofSubmit(
         uint64, /* requestId */
         uint256[] memory inputs,
@@ -48,7 +49,7 @@
 
         uint256 id = inputs[validator.getChallengeInputIndex()];
         // execute the airdrop
-
+    
         }
     }
 
