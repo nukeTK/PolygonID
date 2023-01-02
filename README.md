@@ -10,7 +10,7 @@
     <li> IZKPVerifier </li>
     <li> GenesisUtils.sol - 
     For converting number into hex values, bytes etc, you can replace this contract with any other contract or use library in order to 
-    convert this nuumbers into bytes and other operations. </li>
+    convert numbers into bytes or any other operations. </li>
     <li>ZKPVerifier</li>
 </ul>
 </div>
