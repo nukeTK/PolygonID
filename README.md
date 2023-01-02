@@ -20,7 +20,7 @@
 
 ### You need two functions to implement the ZKPVerifier must include in your contract!!!!
 
-<ul>
+
 
  function _beforeProofSubmit(
         uint64, /* requestId */
@@ -36,8 +36,8 @@
             "address in proof is not a sender address"
         );
     }
-</ul>
-<ul>
+
+
     function _afterProofSubmit(
         uint64 requestId,
         uint256[] memory inputs,
@@ -54,5 +54,4 @@
         }
     }
 
-</ul>
 </div>
