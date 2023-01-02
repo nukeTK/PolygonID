@@ -5,12 +5,13 @@
 
 ### For Implementation of Polygon Id, You need four contracts,
 <div>
-    <ul>
-    1. IcircuitValidator 
+<ul>
+   <li> 1. IcircuitValidator </li>
     2. IZKPVerifier
     3. GenesisUtils.sol - 
     For converting number into hex values, bytes etc, you can replace this contract with any other contract or use    library in order to 
     convert this nuumbers into bytes and other operations.
+</ul>
 </div>
 
 
