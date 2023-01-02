@@ -25,7 +25,7 @@ const query =
                         },
                     "schema":{
                             "url":"https://s3.eu-west-1.amazonaws.com/polygonid-schemas/c597ac41-3fc8-4510-a079-3d2e05889127.json-ld", 
-                            "type":"ERC20Verifier" //Name should smae as Schema name that you put in polygonId site
+                            "type":"ERC20Verifier" //Name should same as Schema name that you put in polygonId site
                             }
                         }
                     }

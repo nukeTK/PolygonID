@@ -38,6 +38,7 @@
         );
     }
 ```
+
 ```
     function _afterProofSubmit(
         uint64 requestId,
@@ -56,3 +57,68 @@
     }
 
 ```
+
+## After this you need to deploy, the Contract and set a request to setZkRequest function, which sets the request !!!!
+
+###Important
+
+In set-request script you need mentioned below query,
+
+```
+const query = {
+    schema: ethers.BigNumber.from(schemaEnd),
+    slotIndex: 2,
+    operator: 2,
+    value: [20020101, ...new Array(63).fill(0).map((i) => 0)],
+    circuitId,
+  };
+```
+
+all the details about the argument explain in below link
+
+https://0xpolygonid.github.io/tutorials/verifier/on-chain-verification/overview/#deploy-the-contract
+
+After this you need create js or ts query file, which includes query that can create QR code SVG,
+
+###Important
+
+## Case sensative Point
+
+```
+const query = 
+{  
+    "id":"2bbefd2d-dc11-4295-890d-3bdca9dd0741",
+    //Code
+    "body":{
+        "transaction_data":{
+            "contract_address":"0x9Fbe545B16EbBaF1Af36382bF3e53Ff7D709257a",  //replace it with your contract address
+            "method_id":"b68967e2",
+            "chain_id":80001,
+            "network":"polygon-mumbai"
+            },
+        "reason":"airdrop participation",
+        "scope":[{
+            "id":1,
+            "circuit_id":"credentialAtomicQuerySig",
+            "rules":{
+                "query":{
+                    "allowed_issuers":["*"],
+                    "req":{ 
+                        "Date":{ //query data name should be same as attributes // 
+                            "$lt":20020101
+                            }
+                        },
+                    "schema":{
+                            //Schema URL Address
+                            "url":"https://s3.eu-west-1.amazonaws.com/polygonid-schemas/c597ac41-3fc8-4510-a079-3d2e05889127.json-ld",  
+                            "type":"ERC20Verifier" //Name should same as Schema name that you put in polygonId 
+                            }
+                        }
+                    }
+                }]
+            }
+}
+export default query;
+```
+
+# Thank you!!!!!
