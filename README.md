@@ -36,7 +36,8 @@
             "address in proof is not a sender address"
         );
     }
-
+</ul>
+<ul>
     function _afterProofSubmit(
         uint64 requestId,
         uint256[] memory inputs,
@@ -49,7 +50,7 @@
 
         uint256 id = inputs[validator.getChallengeInputIndex()];
         // execute the airdrop
-    
+
         }
     }
 
